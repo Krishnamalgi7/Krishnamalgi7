@@ -2,9 +2,9 @@
 
 # Krishna Malgi
 
-### Full Stack Developer · AI/ML · Software Engineer
+### Full Stack Developer · Backend & AI/ML · Software Engineer
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&lines=Building+full+stack+applications+end+to+end;Integrating+AI%2FML+into+real+products;Always+shipping%2C+always+learning)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&lines=Building+full+stack+applications+end+to+end;Working+with+APIs%2C+databases%2C+and+frontend;Integrating+AI%2FML+into+real+projects)](https://git.io/typing-svg)
 
 <br/>
 
@@ -18,9 +18,11 @@
 
 ## About
 
-I enjoy building full stack applications from the ground up — designing the frontend experience, wiring up the APIs, and making the data layer work efficiently. I'm also drawn to applied AI/ML, and I love integrating intelligent features into products that people actually use.
+I build full stack applications from the ground up — designing simple frontends, developing backend APIs, and working with databases to deliver complete, functional systems.
 
-Currently in my final year of engineering, building in public and learning every day.
+I am also interested in applied AI/ML, especially integrating intelligent features into real-world applications.
+
+Currently in my final year of engineering, actively building projects and improving my development skills.
 
 ---
 
@@ -30,23 +32,23 @@ Currently in my final year of engineering, building in public and learning every
 <tr>
 <td valign="top" width="50%">
 
-### 🧠 Multimodal RAG Chatbot
-> Ask questions from PDFs, images, and scanned documents
+### Multimodal RAG Chatbot
+> Document-based Q&A from PDFs, images, and scanned files
 
-- FastAPI backend with pgvector semantic search
-- Groq LLM for inference, Supabase for storage
-- Session-based embedding cleanup on logout
-- React frontend
+- FastAPI backend with pgvector-based semantic search  
+- Integrated Groq LLM for response generation  
+- Managed embeddings with session-based cleanup  
+- Basic React interface for interaction  
 
 </td>
 <td valign="top" width="50%">
 
-### 🥗 Food Recommendation System
+### Food Recommendation System
 > Personalized meal suggestions using KNN
 
-- KNN algorithm over a 1000+ item food dataset
-- FastAPI backend + PostgreSQL
-- Streamlit frontend for real-time results
+- Implemented KNN over a dataset of 1000+ food items  
+- FastAPI backend with PostgreSQL  
+- Streamlit frontend for displaying recommendations  
 
 </td>
 </tr>
@@ -77,31 +79,6 @@ Currently in my final year of engineering, building in public and learning every
 ## Currently Exploring
 
 ```text
-→  Full stack architecture — connecting frontend, APIs, and databases cleanly
-→  Django — exploring as a full stack web framework
-→  LLM engineering — agents, RAG improvements, fine-tuning
-```
-
----
-
-## GitHub Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=Krishnamalgi7&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=7AA2F7&icon_color=7AA2F7&text_color=C9D1D9" height="155"/>
-<img src="https://streak-stats.demolab.com/?user=Krishnamalgi7&theme=tokyonight&hide_border=true&background=0D1117&stroke=7AA2F7&ring=7AA2F7&fire=FF6B6B&currStreakLabel=7AA2F7" height="155"/>
-
-</div>
-
----
-
-<div align="center">
-
-*Open to full stack, AI/ML, and backend roles — internship or full-time.*
-
-<br/>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/krishna-malgi)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:krishnamalgi6@gmail.com)
-
-</div>
+→ Full stack development patterns and project structure  
+→ Django for building complete web applications  
+→ LLM-based features and improvements to RAG systems  
