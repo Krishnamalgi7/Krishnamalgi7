@@ -46,9 +46,8 @@ Currently in my final year of engineering, actively building projects and improv
 
 ---
 
-## Currently Exploring
+<div align="center">
 
-```text
-→ Full stack development patterns and project structure  
-→ Django for building complete web applications  
-→ LLM-based features and improvements to RAG systems  
+![Krishna's GitHub stats](https://github-readme-stats.vercel.app/api?username=Krishnamalgi7&show_icons=true&theme=tokyonight)
+
+</div>
