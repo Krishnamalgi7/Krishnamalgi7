@@ -49,5 +49,7 @@ Currently in my final year of engineering, actively building projects and improv
 <div align="center">
 
 ![Krishna's GitHub stats](https://github-readme-stats.vercel.app/api?username=Krishnamalgi7&show_icons=true&theme=tokyonight)
+![GitHub Streak](https://streak-stats.demolab.com?user=Krishnamalgi7&theme=tokyonight)
 
 </div>
+
