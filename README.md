@@ -18,11 +18,11 @@
 
 ## About
 
-I build full stack applications from the ground up — designing simple frontends, developing backend APIs, and working with databases to deliver complete, functional systems.
+I build full stack applications end-to-end — designing clean user interfaces, developing scalable backend APIs, and working with databases to deliver complete, reliable systems.
 
-I am also interested in applied AI/ML, especially integrating intelligent features into real-world applications.
+I am particularly focused on backend development and applied AI/ML, integrating intelligent features into real-world applications.
 
-Currently in my final year of engineering, actively building projects and improving my development skills.
+As a final year engineering student, I approach development with a strong problem-solving mindset, continuously building projects and improving my software engineering skills.
 
 ---
 
