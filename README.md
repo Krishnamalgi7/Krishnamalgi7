@@ -26,36 +26,6 @@ Currently in my final year of engineering, actively building projects and improv
 
 ---
 
-## Projects
-
-<table>
-<tr>
-<td valign="top" width="50%">
-
-### Multimodal RAG Chatbot
-> Document-based Q&A from PDFs, images, and scanned files
-
-- FastAPI backend with pgvector-based semantic search  
-- Integrated Groq LLM for response generation  
-- Managed embeddings with session-based cleanup  
-- Basic React interface for interaction  
-
-</td>
-<td valign="top" width="50%">
-
-### Food Recommendation System
-> Personalized meal suggestions using KNN
-
-- Implemented KNN over a dataset of 1000+ food items  
-- FastAPI backend with PostgreSQL  
-- Streamlit frontend for displaying recommendations  
-
-</td>
-</tr>
-</table>
-
----
-
 ## Tech Stack
 
 <div align="center">
