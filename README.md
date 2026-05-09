@@ -48,7 +48,7 @@ As a final year engineering student, I approach development with a strong proble
 
 <div align="center">
 
-![Krishna's GitHub stats](https://github-readme-stats.vercel.app/api?username=Krishnamalgi7&show_icons=true&theme=tokyonight)
+![GitHub Streak](https://streak-stats.demolab.com?user=Krishnamalgi7&theme=tokyonight)
 
 </div>
 
