@@ -18,41 +18,11 @@
 
 ## About
 
-I build full stack applications from the ground up — designing simple frontends, developing backend APIs, and working with databases to deliver complete, functional systems.
+I build full stack applications end-to-end — designing clean user interfaces, developing scalable backend APIs, and working with databases to deliver complete, reliable systems.
 
-I am also interested in applied AI/ML, especially integrating intelligent features into real-world applications.
+I am particularly focused on backend development and applied AI/ML, integrating intelligent features into real-world applications.
 
-Currently in my final year of engineering, actively building projects and improving my development skills.
-
----
-
-## Projects
-
-<table>
-<tr>
-<td valign="top" width="50%">
-
-### Multimodal RAG Chatbot
-> Document-based Q&A from PDFs, images, and scanned files
-
-- FastAPI backend with pgvector-based semantic search  
-- Integrated Groq LLM for response generation  
-- Managed embeddings with session-based cleanup  
-- Basic React interface for interaction  
-
-</td>
-<td valign="top" width="50%">
-
-### Food Recommendation System
-> Personalized meal suggestions using KNN
-
-- Implemented KNN over a dataset of 1000+ food items  
-- FastAPI backend with PostgreSQL  
-- Streamlit frontend for displaying recommendations  
-
-</td>
-</tr>
-</table>
+As a final year engineering student, I approach development with a strong problem-solving mindset, continuously building projects and improving my software engineering skills.
 
 ---
 
@@ -76,9 +46,9 @@ Currently in my final year of engineering, actively building projects and improv
 
 ---
 
-## Currently Exploring
+<div align="center">
 
-```text
-→ Full stack development patterns and project structure  
-→ Django for building complete web applications  
-→ LLM-based features and improvements to RAG systems  
+![GitHub Streak](https://streak-stats.demolab.com?user=Krishnamalgi7&theme=tokyonight)
+
+</div>
+
