@@ -543,3 +543,67 @@ footer{
     margin-bottom:10px;
 
 }
+
+/* ================= CERTIFICATIONS ================= */
+
+.certifications{
+
+    padding:100px 80px;
+
+    background:#f5f5f5;
+
+}
+
+.certifications h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+}
+
+.certifications-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.certificate-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+
+}
+
+.certificate-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.certificate-card h3{
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+.certificate-card p{
+
+    color:#555;
+
+}
