@@ -299,3 +299,61 @@ nav a:hover{
 .project-card a:hover{
     background-color: blue;
 }
+
+/* ================= CONTACT ================= */
+
+.contact{
+    padding: 100px 80px;
+
+    text-align: center;
+
+    background-color: #f5f5f5;
+}
+
+.contact h2{
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+.contact p{
+    margin-bottom: 30px;
+
+    font-size: 18px;
+}
+
+.contact-links{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.contact-links a{
+    background-color: blue;
+
+    color: white;
+
+    padding: 12px 24px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.contact-links a:hover{
+    background-color: black;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background-color: black;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
