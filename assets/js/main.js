@@ -1,23 +1,7 @@
-// ================= NAVBAR SHADOW =================
-
-window.addEventListener("scroll", () => {
-
-    const navbar = document.querySelector("nav");
-
-    if(window.scrollY > 50){
-        navbar.style.boxShadow = "0 5px 15px rgba(0,0,0,0.15)";
-    }
-    else{
-        navbar.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
-    }
-
-});
-
-
-// ================= ACTIVE NAV LINK =================
+// ================= SMOOTH NAVBAR HIGHLIGHT =================
 
 const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav ul li a");
+const navLinks = document.querySelectorAll("nav a");
 
 window.addEventListener("scroll", () => {
 
@@ -25,8 +9,7 @@ window.addEventListener("scroll", () => {
 
     sections.forEach(section => {
 
-        const sectionTop = section.offsetTop - 100;
-        const sectionHeight = section.clientHeight;
+        const sectionTop = section.offsetTop - 120;
 
         if(window.scrollY >= sectionTop){
             current = section.getAttribute("id");
@@ -36,10 +19,10 @@ window.addEventListener("scroll", () => {
 
     navLinks.forEach(link => {
 
-        link.style.color = "#222";
+        link.classList.remove("active");
 
         if(link.getAttribute("href") === `#${current}`){
-            link.style.color = "#2563eb";
+            link.classList.add("active");
         }
 
     });
@@ -47,9 +30,9 @@ window.addEventListener("scroll", () => {
 });
 
 
-// ================= FADE ANIMATION =================
+// ================= REVEAL ANIMATION =================
 
-const cards = document.querySelectorAll(
+const revealElements = document.querySelectorAll(
     ".about-card, .skill-card, .project-card"
 );
 
@@ -58,10 +41,7 @@ const observer = new IntersectionObserver((entries)=>{
     entries.forEach(entry=>{
 
         if(entry.isIntersecting){
-
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-
+            entry.target.classList.add("show");
         }
 
     });
@@ -70,28 +50,46 @@ const observer = new IntersectionObserver((entries)=>{
     threshold:0.2
 });
 
-cards.forEach(card=>{
+revealElements.forEach(element=>{
 
-    card.style.opacity = "0";
-    card.style.transform = "translateY(40px)";
-    card.style.transition = "0.6s";
+    element.classList.add("hidden");
 
-    observer.observe(card);
+    observer.observe(element);
 
 });
 
 
-// ================= HERO BUTTON CLICK =================
+// ================= SCROLL TO TOP BUTTON =================
 
-const projectBtn = document.querySelector(".hero-buttons a");
+const scrollBtn = document.createElement("button");
 
-projectBtn.addEventListener("click", ()=>{
+scrollBtn.innerHTML = "↑";
 
-    console.log("Projects button clicked");
+scrollBtn.id = "scrollTopBtn";
+
+document.body.appendChild(scrollBtn);
+
+window.addEventListener("scroll", ()=>{
+
+    if(window.scrollY > 300){
+        scrollBtn.style.display = "block";
+    }
+    else{
+        scrollBtn.style.display = "none";
+    }
+
+});
+
+scrollBtn.addEventListener("click", ()=>{
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
 
 });
 
 
 // ================= CONSOLE MESSAGE =================
 
-console.log("Portfolio Loaded Successfully");
+console.log("Krishna Portfolio Loaded Successfully");
