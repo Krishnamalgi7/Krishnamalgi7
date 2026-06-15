@@ -218,3 +218,84 @@ nav a:hover{
 .skill-card p{
     margin-bottom: 10px;
 }
+
+/* ================= PROJECTS ================= */
+
+.projects{
+    padding: 100px 80px;
+    background-color: white;
+}
+
+.projects h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.project-card{
+    background-color: #f5f5f5;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.project-card:hover{
+    transform: translateY(-8px);
+}
+
+.project-card h3{
+    color: blue;
+    margin-bottom: 15px;
+}
+
+.project-card p{
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.tech-stack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.tech-stack span{
+    background-color: blue;
+    color: white;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+}
+
+.project-card a{
+    display: inline-block;
+
+    background-color: black;
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.project-card a:hover{
+    background-color: blue;
+}
