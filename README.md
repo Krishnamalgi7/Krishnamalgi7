@@ -1,98 +1,102 @@
 <div align="center">
 
-# Krishna Malgi
+# 👋 Hey, I'm Krishna Malgi!
 
-### Full Stack Developer · Backend & AI/ML · Software Engineer
+### Full Stack Developer • Backend Engineer • AI/ML Enthusiast
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&lines=Building+full+stack+applications+end+to+end;Working+with+APIs%2C+databases%2C+and+frontend;Integrating+AI%2FML+into+real+projects)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=1F7A8C&center=true&vCenter=true&width=600&lines=Building+scalable+web+applications;Crafting+intelligent+AI%2FML+solutions;Writing+clean%2C+maintainable+code)](https://git.io/typing-svg)
 
-<br/>
+---
+
+### 💡 About Me
+
+I'm a final-year **B.E. Information Science & Engineering** student from **JNNCE, Shimoga** with a passion for full-stack development and AI/ML integration. I build end-to-end solutions that solve real problems, from sleek UIs to robust backends powered by machine learning.
+
+**Currently:** Full Stack Python Development Intern @ **Kodnest Technologies**  
+**Focus Areas:** Backend Development (FastAPI), Machine Learning, RAG Systems, REST APIs, Databases
+
+---
+
+### 🛠️ Tech Stack
+
+<div>
+
+**Languages:** Python • JavaScript • SQL  
+**Backend:** FastAPI • REST APIs • WebSockets  
+**Frontend:** HTML5 • CSS3 • Vanilla JS  
+**Databases:** PostgreSQL • MySQL • pgvector • Supabase  
+**AI/ML:** Machine Learning • KNN • RAG Pipelines • LLMs • OCR  
+**Tools:** Git • GitHub • Render • Vercel • VS Code • Jupyter
+
+</div>
+
+---
+
+### 🚀 Featured Projects
+
+#### 🍽️ ML-Based Food Recommendation System for Health Conditions
+**Tech:** Python • KNN • FastAPI • PostgreSQL • Streamlit
+
+- Designed KNN algorithm with 1,000+ food entries across 9 medical conditions
+- Engineered hybrid scoring system (60% cosine similarity + 40% percentage matching)
+- Built FastAPI REST APIs with Streamlit frontend
+- **[GitHub Repo](https://github.com/Krishnamalgi7/Food-recommendation)**
+
+#### 🤖 Multi-Modal RAG Chatbot for Document Q&A
+**Tech:** Python • FastAPI • pgvector • Supabase • Groq LLM • OCR
+
+- Full-stack RAG platform processing PDFs, documents & images
+- Hybrid semantic search with pgvector embeddings & LLaMA-3.3-70B
+- Supabase JWT authentication with zero-data-retention
+- **[GitHub Repo](https://github.com/Krishnamalgi7/Rag-document-Q-A)**
+
+---
+
+### 📊 GitHub Statistics
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Krishnamalgi7&theme=tokyonight&show_icons=true&hide_border=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Krishnamalgi7&theme=tokyonight&hide_border=true&layout=compact)
+
+![GitHub Streak](https://streak-stats.demolab.com?user=Krishnamalgi7&theme=tokyonight&hide_border=true)
+
+</div>
+
+---
+
+### 🎓 Certifications & Achievements
+
+- **Python Programming: Zero to Hero** — Udemy
+- **FastAPI Course** — CampusX
+- **Introduction to Generative AI** — Learning Platform
+- **CGPA: 8.08/10** — JNNCE, Shimoga
+
+---
+
+### 🔗 Connect With Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/krishna-malgi)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:krishnamalgi6@gmail.com)
-<img src="https://komarev.com/ghpvc/?username=Krishnamalgi7&style=for-the-badge&color=7aa2f7"/>
-
-</div>
-
----
-
-## About
-
-I build full stack applications end-to-end — designing clean user interfaces, developing scalable backend APIs, and working with databases to deliver complete, reliable systems.
-
-I am particularly focused on backend development and applied AI/ML, integrating intelligent features into real-world applications.
-
-As a final year engineering student, I approach development with a strong problem-solving mindset, continuously building projects and improving my software engineering skills.
+[![Portfolio](https://img.shields.io/badge/Portfolio-1F7A8C?style=for-the-badge&logo=globe&logoColor=white)](https://krishnamalgi.vercel.app)
+[![Resume](https://img.shields.io/badge/Resume-000000?style=for-the-badge&logo=adobe&logoColor=white)](./Krishna_Resume.pdf)
 
 ---
 
-## Tech Stack
+### 💬 What I'm Up To
 
-<div align="center">
-
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-
-</div>
+- 🎯 Building intelligent systems with FastAPI & RAG pipelines
+- 📚 Learning advanced ML patterns and system design
+- 🔨 Contributing to real-world backend projects
+- 💻 Exploring vector databases & LLM integration
 
 ---
 
 <div align="center">
 
-![GitHub Streak](https://streak-stats.demolab.com?user=Krishnamalgi7&theme=tokyonight)
+**"Code is poetry written for machines, but read by humans."**
+
+⭐ Feel free to explore my repositories and reach out for collaboration!
 
 </div>
-
----
-
-## 🚀 Deployment
-
-### Deploy on Vercel
-
-1. **Push to GitHub**
-   ```bash
-   git add .
-   git commit -m "Deploy portfolio"
-   git push origin main
-   ```
-
-2. **Import to Vercel**
-   - Go to [vercel.com](https://vercel.com)
-   - Click "Add New" → "Project"
-   - Select your GitHub repository
-   - Click "Deploy"
-
-3. **Custom Domain (Optional)**
-   - In Vercel Dashboard → Settings → Domains
-   - Add your custom domain
-
-The site will be live at `https://your-domain.vercel.app`
-
----
-
-## 📁 Project Structure
-
-```
-├── index.html              # Main portfolio page
-├── assets/
-│   ├── css/
-│   │   └── style.css       # All styling
-│   ├── js/
-│   │   └── main.js         # Interactivity
-│   ├── Profile_pic.png     # Profile picture
-│   └── Krishna_resume.pdf  # Resume
-├── vercel.json            # Vercel configuration
-├── .gitignore             # Git ignore rules
-└── README.md              # This file
-```
-
----
