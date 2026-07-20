@@ -1,385 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishna Portfolio</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Sudhir Malgi — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Manrope:wght@400;500;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav__logo">KM<span>.</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" class="nav__pill">About</a></li>
+      <li><a href="#skills" class="nav__pill">Skills</a></li>
+      <li><a href="#projects" class="nav__pill">Projects</a></li>
+      <li><a href="#experience" class="nav__pill">Experience</a></li>
+      <li><a href="#github" class="nav__pill">View Stats</a></li>
+    </ul>
+    <button class="nav__burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
 
-    <!-- Navbar -->
-    <nav>
+  <section class="hero" id="home">
+    <div class="hero__inner">
+      <div class="hero__left">
+        <p class="hero__label mono">Software Engineer · Python Full Stack Developer · FastAPI · SQL</p>
+        <h1 class="hero__name">
+          Krishna<br/>
+          <span>Malgi</span>
+        </h1>
+        <p class="hero__desc">
+          Software Engineer with hands-on experience building full-stack web applications using Python, FastAPI, JavaScript, and SQL. Skilled in REST APIs, relational databases, and Machine Learning and RAG applications with OCR and LLM integration.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn-fill">View Projects</a>
+          <a href="mailto:krishnamalgi6@gmail.com" class="btn-ring">Get in Touch</a>
+          <a href="assets/Krishna_Resume.pdf" download="Krishna_Resume.pdf" class="btn-cv">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3m0 12-4-4m4 4 4-4"/><path d="M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"/></svg>
+            Download CV
+          </a>
+        </div>
 
-        <h2>Krishna<span>Dev</span></h2>
+        <div class="hero__status">
+          <div class="hero__status-item">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for opportunities</span>
+          </div>
+          <div class="hero__status-sep"></div>
+          <div class="hero__status-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            <span class="status-text">Interning @ Kodnest</span>
+          </div>
+          <div class="hero__status-sep"></div>
+          <div class="hero__status-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            <span class="status-text">B.E. ISE · JNNCE · CGPA 8.08</span>
+          </div>
+        </div>
+      </div>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="hero__right">
+        <div class="hero__card">
+          <div class="hero__card-avatar">
+            <img src="assets/Profile_pic.png" alt="Krishna Malgi" />
+          </div>
+          <div class="hero__card-info">
+            <strong>Krishna Sudhir Malgi</strong>
+            <span>Software Engineer</span>
+          </div>
+          <div class="hero__card-divider"></div>
+          <div class="hero__card-rows">
+            <div class="hero__card-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Bangalore, Karnataka</span>
+            </div>
+            <div class="hero__card-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+              <a href="mailto:krishnamalgi6@gmail.com" class="hero__card-link">krishnamalgi6@gmail.com</a>
+            </div>
+            <div class="hero__card-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <a href="https://github.com/Krishnamalgi7" target="_blank" rel="noopener" class="hero__card-link">github.com/Krishnamalgi7</a>
+            </div>
+            <div class="hero__card-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="https://linkedin.com/in/krishna-malgi" target="_blank" rel="noopener" class="hero__card-link">linkedin.com/in/krishna-malgi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    </nav>
-
-    <!-- Home Section -->
-<section id="home" class="hero">
-
+  <section class="section bg-cream" id="about">
     <div class="container">
-
-        <div class="hero-text">
-
-            <p class="hero-role">
-                Full Stack Developer
-            </p>
-        
-            <h1>
-                Krishna <span>Malgi</span>
-            </h1>
-        
-            <p>
-                Building Backend Development,
-                AI/ML and real world projects.
-            </p>
-        
-            <div class="hero-buttons">
-        
-                <a href="#projects">
-                    View Projects
-                </a>
-        
-                <a href="#contact">
-                    Contact Me
-                </a>
-        
-            </div>
-        
+      <p class="sec-label"><span class="mono">01 /</span> About</p>
+      <div class="about-grid">
+        <h2 class="sec-title">Curious by<br/>nature. <em>Builder</em><br/>by habit.</h2>
+        <div class="about-body">
+          <p>
+            I am a B.E. Information Science and Engineering graduate from <strong>JNNCE, Shimoga</strong> with a strong foundation in <strong>Python, FastAPI, JavaScript, SQL, and web development</strong>.
+          </p>
+          <p>
+            My work spans full-stack applications, REST APIs, relational databases, and AI-powered systems such as <strong>Machine Learning recommendation engines</strong> and <strong>Multi-Modal RAG chatbots</strong> with OCR and LLM integration.
+          </p>
+          <p>
+            I currently work as a <strong>Full Stack Python Development Intern at Kodnest Technologies</strong> and continue building practical experience in deployment, debugging, and modern development workflows.
+          </p>
         </div>
-
-        <div class="hero-image">
-
-            <img src="assets/Profile_pic.png" alt="Krishna Profile Picture">
-
-        </div>
-
+      </div>
     </div>
+  </section>
 
-</section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-
-    <div class="about-container">
-
-        <div class="about-left">
-            <h2>About Me</h2>
-
-            <p>
-                I am Krishna Malgi, an Information Science graduate passionate
-                about Full Stack Development, Backend Engineering and AI/ML.
-            </p>
-
-            <p>
-                I enjoy building real-world applications using Python,
-                FastAPI, HTML, CSS, JavaScript and PostgreSQL.
-            </p>
-
-            <p>
-                Currently I am working as a Full Stack Python Developer Intern
-                at Kodnest Technologies.
-            </p>
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="sec-label"><span class="mono">02 /</span> Skills</p>
+      <h2 class="sec-title">What I work <em>with.</em></h2>
+      <div class="skills-grid">
+        <div class="skcard js-reveal">
+          <span class="skcard__n mono">01</span>
+          <h3>Languages</h3>
+          <div class="tags"><span>Python</span><span>JavaScript</span><span>SQL</span></div>
         </div>
-
-        <div class="about-right">
-
-            <div class="about-card">
-                <h3>Education</h3>
-                <p>B.E Information Science Engineering</p>
-                <p>JNNCE Shimoga</p>
-                <p>CGPA: 8.08</p>
-            </div>
-
-            <div class="about-card">
-                <h3>Experience</h3>
-                <p>Full Stack Python Developer Intern</p>
-                <p>Kodnest Technologies</p>
-            </div>
-
-            <div class="about-card">
-                <h3>Interests</h3>
-                <p>Backend Development</p>
-                <p>AI / ML</p>
-                <p>System Design</p>
-            </div>
-
+        <div class="skcard js-reveal">
+          <span class="skcard__n mono">02</span>
+          <h3>Frontend</h3>
+          <div class="tags"><span>HTML</span><span>CSS</span></div>
         </div>
-
+        <div class="skcard js-reveal">
+          <span class="skcard__n mono">03</span>
+          <h3>Backend</h3>
+          <div class="tags"><span>FastAPI</span><span>REST APIs</span></div>
+        </div>
+        <div class="skcard js-reveal">
+          <span class="skcard__n mono">04</span>
+          <h3>AI / ML</h3>
+          <div class="tags"><span>Machine Learning</span><span>KNN</span><span>RAG</span><span>OCR</span><span>LLM</span></div>
+        </div>
+        <div class="skcard js-reveal">
+          <span class="skcard__n mono">05</span>
+          <h3>Databases</h3>
+          <div class="tags"><span>PostgreSQL</span><span>MySQL</span><span>pgvector</span><span>Supabase</span></div>
+        </div>
+        <div class="skcard js-reveal">
+          <span class="skcard__n mono">06</span>
+          <h3>Tools &amp; Platforms</h3>
+          <div class="tags"><span>Git</span><span>GitHub</span><span>Render</span><span>Vercel</span><span>VS Code</span></div>
+        </div>
+      </div>
     </div>
+  </section>
 
-</section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-
-    <h2>My Skills</h2>
-
-    <div class="skills-container">
-
-        <div class="skill-card">
-            <h3>Languages</h3>
-            <p>Python</p>
-            <p>JavaScript</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Frontend</h3>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Backend</h3>
-            <p>FastAPI</p>
-            <p>Django</p>
-            <p>REST APIs</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Database</h3>
-            <p>PostgreSQL</p>
-            <p>MySQL</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>AI / ML</h3>
-            <p>KNN</p>
-            <p>RAG</p>
-            <p>Machine Learning</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Tools</h3>
-            <p>Git</p>
-            <p>GitHub</p>
-            <p>VS Code</p>
-        </div>
-
-    </div>
-
-</section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-
-    <h2>Projects</h2>
-
-    <div class="projects-container">
-
-        <div class="project-card">
-
-            <h3>Food Recommendation System</h3>
-
-            <p>
-                ML-based recommendation system that suggests food based
-                on user health conditions using KNN Algorithm.
-            </p>
-
-            <div class="tech-stack">
-                <span>Python</span>
-                <span>FastAPI</span>
-                <span>PostgreSQL</span>
-                <span>KNN</span>
-            </div>
-
-            <a href="https://github.com/Krishnamalgi7" target="_blank">
-                View Project
-            </a>
-
-        </div>
-
-        <div class="project-card">
-
-            <h3>Multi Modal RAG Chatbot</h3>
-
-            <p>
-                AI chatbot capable of answering questions from PDFs,
-                Images and Documents using RAG Pipeline.
-            </p>
-
-            <div class="tech-stack">
-                <span>FastAPI</span>
-                <span>RAG</span>
-                <span>PostgreSQL</span>
-                <span>pgvector</span>
-            </div>
-
-            <a href="https://github.com/Krishnamalgi7" target="_blank">
-                View Project
-            </a>
-
-        </div>
-
-    </div>
-
-<!-- Experience Section -->
-
-<section id="experience" class="experience">
-
-    <h2>Experience</h2>
-
-    <div class="experience-container">
-
-        <div class="experience-card">
-
-            <h3>Full Stack Python Developer Intern</h3>
-
-            <h4>Kodnest Technologies</h4>
-
-            <p class="duration">
-                Feb 2026 - Present
-            </p>
-
+  <section class="section bg-cream" id="projects">
+    <div class="container">
+      <p class="sec-label"><span class="mono">03 /</span> Projects</p>
+      <h2 class="sec-title">Things I've <em>built.</em></h2>
+      <div class="proj-list">
+        <article class="proj js-reveal">
+          <div class="proj__meta">
+            <span class="mono dim small">01</span>
+            <span class="proj__tag active">ML</span>
+          </div>
+          <div class="proj__body">
+            <h3>ML-Based Food Recommendation System for Health Conditions</h3>
             <ul>
-                <li>Building web applications using Python and FastAPI.</li>
-                <li>Working with HTML, CSS and JavaScript.</li>
-                <li>Developing REST APIs.</li>
-                <li>Database design using PostgreSQL and MySQL.</li>
+              <li>Designed a <strong>KNN recommendation algorithm</strong> on <strong>1,000+</strong> food entries, filtering to 956 valid items across <strong>9 medical conditions</strong> (Diabetes, Hypertension, Heart, Kidney, PCOD, etc.) using <strong> 13</strong> nutritional attributes.</li>
+              <li>Engineered a <strong>hybrid scoring system</strong> (<strong>60%</strong> cosine similarity, <strong>40%</strong> percentage-based match) with <strong>StandardScaler normalization</strong> to prevent high-magnitude features like Sodium from biasing results.</li>
+              <li>Implemented <strong>FastAPI </strong> REST APIs with a <strong>Streamlit</strong> frontend; designed a normalized <strong>PostgreSQL</strong> schema for real-time nutritional filtering and ranking.</li>
             </ul>
+            <div class="tags">
+              <span>Python</span><span>KNN</span><span>FastAPI</span><span>PostgreSQL</span><span>Streamlit</span>
+            </div>
+          </div>
+          <div class="proj__side">
+            <a href="https://github.com/Krishnamalgi7/Food-recommendation" target="_blank" rel="noopener" class="proj__gh">GitHub ↗</a>
+            <span class="mono dim small">Aug 2025 – Nov 2025</span>
+          </div>
+        </article>
 
-        </div>
-
-        <div class="experience-card">
-
-            <h3>Data Analytics Virtual Internship</h3>
-
-            <h4>Deloitte × Forage</h4>
-
-            <p class="duration">
-                Jul 2025
-            </p>
-
+        <article class="proj js-reveal">
+          <div class="proj__meta">
+            <span class="mono dim small">02</span>
+            <span class="proj__tag active">AI / RAG</span>
+          </div>
+          <div class="proj__body">
+            <h3>Multi-Modal RAG Chatbot for Document Q&amp;A</h3>
             <ul>
-                <li>Performed data cleaning and preprocessing.</li>
-                <li>Created business insights from datasets.</li>
-                <li>Worked on analytics and reporting tasks.</li>
+              <li>Architected a full-stack <strong>RAG platform</strong> processing PDFs, scanned documents, and images using <strong>Tesseract OCR</strong> and <strong>Camelot</strong> table extraction, with token-by-token streaming via <strong>Server-Sent Events (SSE)</strong>.</li>
+              <li>Designed a <strong>hybrid semantic search pipeline</strong> using <strong>pgvector</strong> and <strong>all-MiniLM-L6-v2 embeddings</strong> with query expansion and re-ranking, serving responses via <strong>Groq's LLaMA-3.3-70B</strong>.</li>
+              <li>Used <strong>Supabase</strong> Implemented <strong> JWT </strong> authentication with per-request validation, enforced <strong>zero-data-retention</strong> by purging user vector embeddings on logout.</li>
             </ul>
-
-        </div>
-
+            <div class="tags">
+              <span>Python</span><span>FastAPI</span><span>RAG</span><span>pgvector</span><span>Supabase</span><span>OCR</span><span>LLM</span>
+            </div>
+          </div>
+          <div class="proj__side">
+            <a href="https://github.com/Krishnamalgi7/Rag-document-Q-A" target="_blank" rel="noopener" class="proj__gh">GitHub ↗</a>
+            <span class="mono dim small">Jan 2026 – Mar 2026</span>
+          </div>
+        </article>
+      </div>
     </div>
+  </section>
 
-</section>
-
-<!-- Certifications Section -->
-
-<section id="certifications" class="certifications">
-
-    <h2>Certifications</h2>
-
-    <div class="certifications-container">
-
-        <div class="certificate-card">
-            <h3>Python Programming: Zero to Hero</h3>
-            <p>Udemy</p>
+  <section class="section" id="experience">
+    <div class="container">
+      <p class="sec-label"><span class="mono">04 /</span> Experience</p>
+      <h2 class="sec-title">Where I've <em>worked.</em></h2>
+      <div class="exp-list">
+        <div class="exp js-reveal">
+          <div class="exp__top">
+            <div>
+              <h3>Full Stack Python Development Intern</h3>
+              <span class="exp__co">Kodnest Technologies</span>
+            </div>
+            <span class="mono dim small">Feb 2026 – Present</span>
+          </div>
+          <ul>
+            <li>Build and maintain full-stack web applications using Python, HTML, CSS, and JavaScript.</li>
+            <li>Design relational MySQL schemas and develop REST APIs for real-world products.</li>
+            <li>Use Git/GitHub and GenAI-assisted development to speed up debugging and learning.</li>
+          </ul>
         </div>
 
-        <div class="certificate-card">
-            <h3>FastAPI Course</h3>
-            <p>CampusX</p>
+        <div class="exp js-reveal">
+          <div class="exp__top">
+            <div>
+              <h3>Data Analytics Virtual Internship</h3>
+              <span class="exp__co">Deloitte × Forage</span>
+            </div>
+            <span class="mono dim small">Jul 2025</span>
+          </div>
+          <ul>
+            <li>Performed data cleaning, analysis, and visualization on business datasets.</li>
+            <li>Generated insights and reports that supported data-driven decision making.</li>
+          </ul>
         </div>
+      </div>
 
-        <div class="certificate-card">
-            <h3>IBM Granite Models for Software Development</h3>
-            <p>IBM SkillsBuild</p>
+      <p class="sec-label" style="margin-top: 4rem;"><span class="mono">05 /</span> Certifications</p>
+      <div class="certs-grid">
+        <div class="cert js-reveal">
+          <strong>Python Programming: Zero to Hero</strong>
+          <span class="mono dim small">Udemy</span>
         </div>
-
-        <div class="certificate-card">
-            <h3>Power BI Workshop</h3>
-            <p>Be10x</p>
+        <div class="cert js-reveal">
+          <strong>FastAPI Course</strong>
+          <span class="mono dim small">CampusX</span>
         </div>
-
+        <div class="cert js-reveal">
+          <strong>Introduction to Generative AI</strong>
+          <span class="mono dim small">Learning Platform</span>
+        </div>
+      </div>
     </div>
+  </section>
 
-</section>
-
-<!-- GitHub Section -->
-
-<section id="github" class="github">
-
-    <h2>GitHub Activity</h2>
-
-    <div class="github-container">
-
-        <div class="github-card">
-
-            <h3>GitHub Profile</h3>
-
-            <p>
-                Explore my projects, repositories and coding activity.
-            </p>
-
-            <a href="https://github.com/Krishnamalgi7"
-               target="_blank">
-               Visit GitHub
-            </a>
-
-        </div>
-
-        <div class="github-card">
-
-            <h3>GitHub Stats</h3>
-
-            <img
-                src="https://github-readme-stats.vercel.app/api?username=Krishnamalgi7&show_icons=true&theme=default"
-                alt="GitHub Stats">
-
-        </div>
-
+  <div class="contribution-popup" id="contributionPopup" data-username="Krishnamalgi7">
+    <div class="contribution-popup__content">
+      <span class="contribution-popup__number" id="contributionCount">272</span>
+      <span class="contribution-popup__text">contributions in <span id="contributionYear">2026</span></span>
     </div>
+  </div>
 
-</section>
-
-</section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-
-    <h2>Contact Me</h2>
-
-    <p>
-        Interested in working together or discussing opportunities?
-    </p>
-
-    <div class="contact-links">
-
-        <a href="mailto:krishnamalgi6@gmail.com">
-            Email Me
-        </a>
-
-        <a href="https://github.com/Krishnamalgi7" target="_blank">
-            GitHub
-        </a>
-
-        <a href="https://linkedin.com/in/krishna-malgi" target="_blank">
-            LinkedIn
-        </a>
-
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <p class="sec-label light"><span class="mono">06 /</span> Contact</p>
+      <div class="contact-grid">
+        <div>
+          <h2 class="sec-title light">Get in <br/><em>touch.</em></h2>
+          <p class="contact-sub">
+            Have an interesting project, a question, or just want to talk tech? I am always up for a good conversation.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:krishnamalgi6@gmail.com" class="clink">
+            <span class="mono dim small">Email</span>
+            <span>krishnamalgi6@gmail.com ↗</span>
+          </a>
+          <a href="https://linkedin.com/in/krishna-malgi" target="_blank" rel="noopener" class="clink">
+            <span class="mono dim small">LinkedIn</span>
+            <span>linkedin.com/in/krishna-malgi ↗</span>
+          </a>
+          <a href="https://github.com/Krishnamalgi7" target="_blank" rel="noopener" class="clink">
+            <span class="mono dim small">GitHub</span>
+            <span>github.com/Krishnamalgi7 ↗</span>
+          </a>
+          <a href="tel:+918792389352" class="clink">
+            <span class="mono dim small">Phone</span>
+            <span>+91 8792389352 ↗</span>
+          </a>
+          <a href="assets/Krishna_Resume.pdf" download="Krishna_Resume.pdf" class="clink clink--cv">
+            <span class="mono dim small">Resume</span>
+            <span>Download CV ↓</span>
+          </a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <footer>
+  <footer class="footer">
+    <span>Krishna Sudhir Malgi · 2026</span>
+    <span class="mono dim small">Built with HTML · CSS · JS</span>
+  </footer>
 
-    <p>
-        © 2026 Krishna Malgi | Full Stack Developer
-    </p>
-
-</footer>
-
-</section>
-
-    <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

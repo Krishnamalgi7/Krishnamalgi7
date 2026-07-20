@@ -52,3 +52,47 @@ As a final year engineering student, I approach development with a strong proble
 
 </div>
 
+---
+
+## 🚀 Deployment
+
+### Deploy on Vercel
+
+1. **Push to GitHub**
+   ```bash
+   git add .
+   git commit -m "Deploy portfolio"
+   git push origin main
+   ```
+
+2. **Import to Vercel**
+   - Go to [vercel.com](https://vercel.com)
+   - Click "Add New" → "Project"
+   - Select your GitHub repository
+   - Click "Deploy"
+
+3. **Custom Domain (Optional)**
+   - In Vercel Dashboard → Settings → Domains
+   - Add your custom domain
+
+The site will be live at `https://your-domain.vercel.app`
+
+---
+
+## 📁 Project Structure
+
+```
+├── index.html              # Main portfolio page
+├── assets/
+│   ├── css/
+│   │   └── style.css       # All styling
+│   ├── js/
+│   │   └── main.js         # Interactivity
+│   ├── Profile_pic.png     # Profile picture
+│   └── Krishna_resume.pdf  # Resume
+├── vercel.json            # Vercel configuration
+├── .gitignore             # Git ignore rules
+└── README.md              # This file
+```
+
+---

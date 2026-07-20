@@ -1,95 +1,125 @@
-// ================= SMOOTH NAVBAR HIGHLIGHT =================
+const nav = document.getElementById("nav");
 
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav a");
+if (nav) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      nav.classList.add("scrolled");
+    } else {
+      nav.classList.remove("scrolled");
+    }
+  });
+}
 
-window.addEventListener("scroll", () => {
+const burger = document.getElementById("burger");
+const navLinks = document.getElementById("navLinks");
 
-    let current = "";
+if (burger && navLinks) {
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("open");
+    navLinks.classList.toggle("open");
+  });
 
-    sections.forEach(section => {
-
-        const sectionTop = section.offsetTop - 120;
-
-        if(window.scrollY >= sectionTop){
-            current = section.getAttribute("id");
-        }
-
+  document.querySelectorAll(".nav__links a").forEach((link) => {
+    link.addEventListener("click", () => {
+      burger.classList.remove("open");
+      navLinks.classList.remove("open");
     });
+  });
+}
 
-    navLinks.forEach(link => {
-
-        link.classList.remove("active");
-
-        if(link.getAttribute("href") === `#${current}`){
-            link.classList.add("active");
-        }
-
+const revealElements = document.querySelectorAll(".js-reveal");
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
     });
-
-});
-
-
-// ================= REVEAL ANIMATION =================
-
-const revealElements = document.querySelectorAll(
-    ".about-card, .skill-card, .project-card"
+  },
+  {
+    threshold: 0.15
+  }
 );
 
-const observer = new IntersectionObserver((entries)=>{
+revealElements.forEach((element) => {
+  observer.observe(element);
+});
 
-    entries.forEach(entry=>{
+const sections = document.querySelectorAll("section");
+const navItems = document.querySelectorAll(".nav__links a");
 
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
+window.addEventListener("scroll", () => {
+  let currentSection = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 150;
+    const sectionHeight = section.offsetHeight;
+
+    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+      currentSection = section.getAttribute("id");
+    }
+  });
+
+  navItems.forEach((link) => {
+    link.style.color = "";
+
+    if (link.getAttribute("href") === `#${currentSection}`) {
+      link.style.color = "#1F7A8C";
+    }
+  });
+});
+
+window.addEventListener("load", () => {
+  document.body.style.opacity = "1";
+
+  const viewStatsLink = document.querySelector('a[href="#github"]');
+  const contributionPopup = document.getElementById('contributionPopup');
+  const contributionCount = document.getElementById('contributionCount');
+  const contributionYear = document.getElementById('contributionYear');
+  const username = contributionPopup.getAttribute('data-username');
+
+  if (viewStatsLink && contributionPopup) {
+    async function fetchContributions() {
+      try {
+        const currentYear = new Date().getFullYear();
+        const response = await fetch('https://api.github.com/graphql', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            query: `{
+              user(login: "${username}") {
+                contributionsCollection(from: "${currentYear}-01-01T00:00:00Z", to: "${currentYear}-12-31T23:59:59Z") {
+                  totalContributions
+                }
+              }
+            }`
+          })
+        });
+
+        const data = await response.json();
+        if (data.data?.user?.contributionsCollection?.totalContributions !== undefined) {
+          const count = data.data.user.contributionsCollection.totalContributions;
+          contributionCount.textContent = count;
+          contributionYear.textContent = currentYear;
         }
-
-    });
-
-},{
-    threshold:0.2
-});
-
-revealElements.forEach(element=>{
-
-    element.classList.add("hidden");
-
-    observer.observe(element);
-
-});
-
-
-// ================= SCROLL TO TOP BUTTON =================
-
-const scrollBtn = document.createElement("button");
-
-scrollBtn.innerHTML = "↑";
-
-scrollBtn.id = "scrollTopBtn";
-
-document.body.appendChild(scrollBtn);
-
-window.addEventListener("scroll", ()=>{
-
-    if(window.scrollY > 300){
-        scrollBtn.style.display = "block";
-    }
-    else{
-        scrollBtn.style.display = "none";
+      } catch (error) {
+        // Fallback to default value if API fetch fails
+      }
     }
 
-});
-
-scrollBtn.addEventListener("click", ()=>{
-
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
+    viewStatsLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      fetchContributions();
+      contributionPopup.classList.add('active');
+      setTimeout(function() {
+        contributionPopup.classList.remove('active');
+      }, 3000);
+      setTimeout(function() {
+        window.location.hash = '#github';
+      }, 3000);
     });
-
+  }
 });
-
-
-// ================= CONSOLE MESSAGE =================
-
-console.log("Krishna Portfolio Loaded Successfully");
