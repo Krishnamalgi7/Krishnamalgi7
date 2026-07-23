@@ -80,43 +80,61 @@ window.addEventListener("load", () => {
   const username = contributionPopup.getAttribute('data-username');
 
   if (viewStatsLink && contributionPopup) {
-    async function fetchContributions() {
+ 
+    const currentYear = new Date().getFullYear();
+    contributionYear.textContent = "the last year";
+    contributionCount.textContent = "...";
+
+    
+    async function fetchContributions(retryCount = 1) {
       try {
-        const currentYear = new Date().getFullYear();
-        const response = await fetch('https://api.github.com/graphql', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            query: `{
-              user(login: "${username}") {
-                contributionsCollection(from: "${currentYear}-01-01T00:00:00Z", to: "${currentYear}-12-31T23:59:59Z") {
-                  totalContributions
-                }
-              }
-            }`
-          })
-        });
+        
+        const response = await fetch(`https://github-contributions-api.jogruber.de/v4/${username}`);
+        
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
 
         const data = await response.json();
-        if (data.data?.user?.contributionsCollection?.totalContributions !== undefined) {
-          const count = data.data.user.contributionsCollection.totalContributions;
-          contributionCount.textContent = count;
-          contributionYear.textContent = currentYear;
-        }
+        
+        
+        const oneYearAgo = new Date();
+        oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
+        
+        const count = data.contributions
+          .filter(c => new Date(c.date) >= oneYearAgo)
+          .reduce((sum, c) => sum + c.count, 0);
+        
+       
+        contributionCount.textContent = count;
+        contributionYear.textContent = "the last year";
       } catch (error) {
-        // Fallback to default value if API fetch fails
+        
+        if (retryCount > 0) {
+          
+          console.warn(`Fetch failed, retrying... (${retryCount} retries left)`);
+          await fetchContributions(retryCount - 1);
+        } else {
+          
+          console.error("Failed to fetch GitHub contributions:", error);
+          contributionCount.textContent = "--";
+        }
       }
     }
 
+    
+    fetchContributions();
+
+    
     viewStatsLink.addEventListener('click', function(e) {
       e.preventDefault();
-      fetchContributions();
+     
       contributionPopup.classList.add('active');
+      
       setTimeout(function() {
         contributionPopup.classList.remove('active');
       }, 3000);
+      
       setTimeout(function() {
         window.location.hash = '#github';
       }, 3000);
